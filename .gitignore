@@ -1,0 +1,2 @@
+<!--This file specifies which files & directories should be ignored by version control (Git). I can list node_modules/ & any other files or folders I don't want to include in my repository. -->
+node_modules/

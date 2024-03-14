@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ruth's CocktailDB Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="card">
+    <div class="shadow"></div>
+    <div class="card-image-container">
+
+        <img src="<%= cocktail.strDrinkThumb %>/preview" alt="<%= cocktail.strDrink %>" class="card-image">
+    </div>
+    <div class="txt">Ingredients</div>
+    <ul class="ingredients-list">
+        <% for (let i = 1; i <= 15; i++) { %>
+            <% const ingredientKey = `strIngredient${i}`; %>
+            <% const measureKey = `strMeasure${i}`; %>
+            <% if (cocktail[ingredientKey]) { %>
+                <li><%= cocktail[measureKey] %> <%= cocktail[ingredientKey] %></li>
+            <% } %>
+        <% } %>
+    </ul>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1 class="animate-character">Random Cocktail</h1>
+        </div>
+    </div>
+</div>
+
+<h2><%= cocktail.strDrink %></h2>
+<p>Category: <%= cocktail.strCategory %></p>
+<p class="instruction-paragraph">Instructions: <%= cocktail.strInstructions %></p>
+
+
+<button class="button">
+    <div class="display">
+        <div id="msg">New Cocktail</div>
+    </div>
+    <span></span>
+    <span></span>
+</button>
+
+<script src="script.js"></script>
+<link rel="stylesheet" href="button-styles.css">
+</body>
+</html>
+
+
