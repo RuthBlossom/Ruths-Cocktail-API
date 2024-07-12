@@ -2,6 +2,14 @@
 
 This Express.js application fetches a random cocktail from [TheCocktailDB API](https://www.thecocktaildb.com/api.php) and displays it on a web page. It utilizes Axios for making HTTP requests and EJS for rendering views.
 
+![Capturewebsite](https://github.com/user-attachments/assets/2b23132e-25dd-4e24-8d78-6d0d63db7821)
+
+![Capturewebsite2](https://github.com/user-attachments/assets/669c9e28-f951-4731-8878-008ed55b1917)
+
+![Capturewebsite3](https://github.com/user-attachments/assets/3d50ebce-f238-47c8-85f1-481847b61aca)
+
+
+
 ## Prerequisites
 - Node.js installed on your machine.
 
